@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 \usepackage{ulem}
 \usepackage{tikz}
 \usepackage{booktabs}
@@ -66,20 +66,27 @@
     \only<+>{
         \framesubtitle{Best Book Ever}
         \begin{center}
-            \includegraphics[width = .4\textwidth]{gww.jpg}
+            \includegraphics[height = .9\textheight]{gww.jpg}
         \end{center}
     }
     \only<+>{
         \framesubtitle{Current Book}
         \begin{center}
-            \includegraphics[width = .4\textwidth]{strange_beasts.jpg}
+            \includegraphics[height = .9\textheight]{flashlight.jpg}
         \end{center}
     }
     \only<+>{
-        \framesubtitle{Current Series}
-        \begin{center}
-            \includegraphics[width = .5\textwidth]{severance.jpg}
-        \end{center}
+        \framesubtitle{Current Comics Books}
+        \begin{minipage}{.49\textwidth}
+            \begin{center}
+                \includegraphics[height = .9\textheight]{zerocalcare.jpg}
+            \end{center}
+        \end{minipage}
+        \begin{minipage}{.49\textwidth}
+            \begin{center}
+                \includegraphics[height = .9\textheight]{zerocalcare2.jpg}
+            \end{center}
+        \end{minipage}
     }
 \end{frame}
 
@@ -139,7 +146,7 @@
     }
     \only<2>{
         \begin{center}
-            \includegraphics[width = .9\textwidth]{png/pretty_please.jpg}
+            \includegraphics[height = .9\textheight]{pretty_please.jpg}
         \end{center}
     }
 \end{frame}
@@ -148,12 +155,12 @@
     \frametitle{Additional Resources}
     \only<1>{
         \begin{center}
-            \includegraphics<1>[width = .5\textwidth]{copy_paste.png}
+            \includegraphics<1>[height = .9\textheight]{copy_paste.png}
         \end{center}
     }
     \only<2>{
         \begin{center}
-            \includegraphics<2>[width = .6\textwidth]{stack_overflow.png}
+            \includegraphics<2>[height = .9\textheight]{stack_overflow.png}
         \end{center}
     }
     \only<3>{
@@ -166,27 +173,27 @@
     }
     \only<4>{
         \begin{center}
-            \includegraphics<4>[width=\textwidth]{chatgpt_stackoverflow.png}
+            \includegraphics<4>[height=.9\textheight]{chatgpt_stackoverflow.png}
         \end{center}
     }
     \only<5>{
         \begin{center}
-            \includegraphics<5>[width=\textwidth]{chatgpt.png}
+            \includegraphics<5>[height=.9\textheight]{chatgpt.png}
         \end{center}
     }
     \only<6>{
         \begin{center}
-            \includegraphics<6>[width = \textwidth]{chatgpt_meme_original.jpg}
+            \includegraphics<6>[height = .9\textheight]{chatgpt_meme_original.jpg}
         \end{center}
     }
     \only<7>{
         \begin{center}
-            \includegraphics<7>[width=.5\textwidth]{chatgpt_meme.jpg}
+            \includegraphics<7>[height=.9\textheight]{chatgpt_meme.jpg}
         \end{center}
     }
     \only<8>{
         \begin{center}
-            \includegraphics<8>[width=.7\textwidth]{chatgpt2025.png}
+            \includegraphics<8>[height=.9\textheight]{chatgpt2025.png}
         \end{center}
     }
     
@@ -272,7 +279,7 @@
 \begin{frame}
     \only<+>{
         \centering
-        \includegraphics[width = .6\framewidth]{png/jupyter.png}
+        \includegraphics[height = .9\textheight]{png/jupyter.png}
     }
     \only<+>{
         \frametitle{What is Jupyter Notebook?}
@@ -282,7 +289,8 @@
     }
     \only<+>{
         \frametitle{Jupyter Notebook}
-        \includegraphics[width = \framewidth]{png/jupyter_notebook.png}
+        \centering
+        \includegraphics[width = .7\textwidth]{png/jupyter_notebook.png}
     }
     \only<+>{
         \frametitle{What is Jupyter Notebook App?}
@@ -292,10 +300,10 @@
     }
 \end{frame}
 
-\begin{frame}[fragile]
+\begin{frame}
     \only<+>{
         \begin{center}
-            \includegraphics[scale = .7]{png/colab.png}
+            \includegraphics[height = .6\textheight]{png/colab.png}
         \end{center}
     }
     \only<+>{
@@ -306,7 +314,8 @@
     }
     \only<+>{
         \frametitle{Colaboratory}
-        \includegraphics[width = \framewidth]{png/colaboratory.png}
+        \centering
+        \includegraphics[width = .7\framewidth]{png/colaboratory.png}
     }
     \only<+>{
         \frametitle{How to open Jupyter Notebook in Colaboratory?}
@@ -319,7 +328,9 @@
         \end{enumerate}
     }
     \only<+>{
-        \includegraphics[width = \framewidth]{png/colab_notebook.png}
+        \frametitle{How to open Jupyter Notebook in Colaboratory?}
+        \centering
+        \includegraphics[width = .8\framewidth]{png/colab_notebook.png}
     }
 \end{frame}
 
